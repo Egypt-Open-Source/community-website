@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Egypt Open Source Community Website</title>
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <style>
+    .post {
+      background-color: #f5f5f5;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Egypt Open Source Community</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Post Something</h2>
+    <form id="post-form">
+      <input type="text" id="post-input" placeholder="Enter your post content">
+      <button type="submit">Post</button>
+    </form>
+
+    <h2>Posts</h2>
+    <div id="posts-container"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Egypt Open Source . All rights reserved.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('#post-form');
+    const input = document.querySelector('#post-input');
+    const postsContainer = document.querySelector('#posts-container');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const postContent = input.value;
+
+      if (postContent.trim() !== '') {
+        createPost(postContent);
+        input.value = '';
+      }
+    });
+
+    function createPost(content) {
+      const post = {
+        content: content,
+        timestamp: new Date().toLocaleString()
+      };
+
+      let posts = JSON.parse(localStorage.getItem('posts')) || [];
+      posts.push(post);
+      localStorage.setItem('posts', JSON.stringify(posts));
+
+      updatePosts();
+    }
+
+    function updatePosts() {
+      postsContainer.innerHTML = '';
+
+      let posts = JSON.parse(localStorage.getItem('posts')) || [];
+
+      posts.forEach((post) => {
+        const postElement = document.createElement('div');
+        postElement.classList.add('post');
+        postElement.innerHTML = `
+          <p>${post.content}</p>
+          <small>${post.timestamp}</small>
+        `;
+
+        postsContainer.appendChild(postElement);
+      });
+    }
+
+    updatePosts(); // Call the updatePosts function when the page loads to display existing posts
+  </script>
+</body>
+</html>
