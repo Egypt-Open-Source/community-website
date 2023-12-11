@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tool on </title>
+        <link>/categories/tool/</link>
+        <description>Recent content in Tool on </description>
+        <generator>Hugo -- gohugo.io</generator>
+        <lastBuildDate>Mon, 11 Dec 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/tool/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Web Getter</title>
+        <link>/post/webgetter/</link>
+        <pubDate>Mon, 11 Dec 2023 00:00:00 +0000</pubDate>
+        
+        <guid>/post/webgetter/</guid>
+        <description>&lt;img src="/post/webgetter/cover.jpg" alt="Featured image of post Web Getter" /&gt;&lt;h1 id=&#34;webgetter&#34;&gt;WebGetter&lt;/h1&gt;
+&lt;p&gt;WebGetter is an open-source tool developed by Team Egypt Open Source that allows you to quickly obtain the source code of any website. This tool is designed for ease of use on any Linux system or Termux. Feel free to contribute and support us by buying a coffee.&lt;/p&gt;
+&lt;h2 id=&#34;table-of-contents&#34;&gt;Table of Contents&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#requirements&#34; &gt;Requirements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#installation&#34; &gt;Installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#usage&#34; &gt;Usage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;#about&#34; &gt;About&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;Before using WebGetter, make sure you have the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Any Linux system terminal or Termux.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Install &lt;code&gt;wget&lt;/code&gt;:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt install wget
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Clone the tool:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl https://raw.githubusercontent.com/Egypt-Open-Source/WebGetter/main/web_getter.sh &amp;gt;&amp;gt; web_getter.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Give the tool permissions:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;chmod +x web_getter.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Open the tool:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./web_getter.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;usage&#34;&gt;Usage&lt;/h2&gt;
+&lt;p&gt;Once the tool is open, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Choose your desired option:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Option 1: Get basic website source code without additional links, videos, or audio.&lt;/li&gt;
+&lt;li&gt;Option 2: Get all website source code, including HTML, CSS, JS files, and linked websites. Also, retrieves audio and videos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When adding a website link, ensure it starts with &amp;ldquo;http/https&amp;rdquo; and includes &amp;ldquo;www&amp;rdquo; (except for GitHub Pages source code, where &amp;ldquo;www&amp;rdquo; is not needed).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;After entering the link and pressing Enter, the tool will save the source code in a folder named after the website.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;about&#34;&gt;About&lt;/h2&gt;
+&lt;p&gt;WebGetter is a free open-source tool developed by Team Egypt Open Source. It allows you to obtain any website&amp;rsquo;s source code in just a few minutes.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;This project is licensed under the MIT License.&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
