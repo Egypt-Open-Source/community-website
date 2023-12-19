@@ -1,0 +1,1 @@
+[![Build and deploy](https://github.com/Egypt-Open-Source/egypt-open-source.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/Egypt-Open-Source/egypt-open-source.github.io/actions/workflows/hugo.yml)
